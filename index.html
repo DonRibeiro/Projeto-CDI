@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/android-chrome-192x192.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Seus rendimentos</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+      
+      @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+      </style>
+    </head>
+    <body>
+
+      <header>
+        <h1> Calcule os seus rendimentos</h1>
+      </header>
+
+      <section>
+        
+  <div id="contagem">
+    <div class="input-g">
+    <p> Valor que será investido: <input type="number" name="invest" id="invest"></p>
+    </div>
+       
+    <div class="input-g">
+          <p> Período em anos: <input type="number" name="perio" id="perio"></p> 
+        </div>
+        
+        <div class="input-g">
+          <p> Taxa de CDI (% ao ano): <input type="number" name="taxa" id="taxa"></p>
+        </div>
+
+        <div class="input-g">
+          <p> Rendimento do CDI(%): <input type="number" name="cdi" id="cdi"></p>
+        </div>
+  
+        <div class="input-g">
+    <p> <input type="button" value="Calcular rendimento" id="resul"></p>
+    
+  </div>      
+</div>
+        
+<div id="res">
+<p>Seu rendimento...</p>
+</div>
+
+<div id="obs">
+  <p><strong>OBS.:</strong> A base de cálculo não inclui IOF (Imposto sob Operações Financeiras) e IE (Imposto de renda).</p>
+</div>
+<article>
+  <h2>O que é <em>CDI?</em></h2>
+<p> CDI é a sigla para <strong>Certificado de Depósito Interbancário </strong>. É um título privado emitido por bancos para realizar empréstimos de curtíssimo prazo entre si, com vencimento de apenas um dia. A taxa média de juros praticada nessas transações é chamada de taxa CDI ou taxa DI.</p>
+
+<h2>Por que o <em>CDI</em> é importante?</h2>
+
+ <ul> <li>Regula o mercado financeiro: O CDI ajuda a <strong>regular</strong> o fluxo de caixa entre os bancos, garantindo que as instituições financeiras tenham liquidez para operar.</li>
+ <li>Referência para investimentos: A taxa CDI é usada como referência para diversos investimentos de <strong>renda fixa, como CDBs, LCIs e LCAs</strong>.</li>
+ <li>Indicador da economia: O CDI reflete as condições do mercado financeiro e pode ser usado como um indicador da saúde da economia.</li> </ul>
+ 
+<h2>Como o  <em>CDI</em> afeta seus investimentos?</h2>
+
+<ul><li>Muitos investimentos de renda fixa têm sua rentabilidade atrelada ao CDI. Isso significa que o rendimento desses investimentos varia de acordo com a taxa CDI.</li>
+<!-- TABELA COM IMPOSTO DE RENDA !-->
+
+ <li>Ao investir em um CDB que rende 100% do CDI, por exemplo, <strong>seu dinheiro renderá o mesmo que a taxa CDI</strong>.</li>
+ <li>O CDI também é usado como referência para fundos de investimento, permitindo que os investidores comparem o desempenho dos fundos com a taxa CDI. </li></ul>
+ 
+<h2> Resumindo</h2>
+
+<p>O CDI é uma taxa importante para o mercado financeiro e para os investidores. Ele regula as transações entre os bancos e serve como referência para diversos investimentos de renda fixa. </p>
+
+<h2> Imposto de renda</h2>
+<table>
+  
+  <caption> Valores e porcentagens </caption>
+  <thead>
+    <tr><th scope="col">
+     Base de cálculo
+       </th>
+       <th scope="col">
+         Alíquota (%)
+       </th>
+       <th scope="col">
+         Parcela (R$)
+       </th>
+        </tr>
+  </thead>
+  
+    <tbody>
+  <tr>
+    <td>  Até 2.259,20</td>
+    <td> 0 </td>
+    <td> 0 </td>
+    
+  </tr>
+  
+  <tr> 
+  <td> 2.259,21 até 2.826,65</td>
+  <td> 7,5 </td>
+  <td> 169,44 </td>
+  </tr>
+  
+  <tr>
+    <td> 2.826,66 até 3.751,05</td>
+    <td> 15 </td>
+    <td> 381,44 </td>
+  </tr>
+  
+  <tr>
+    <td> 3.751,06 até 4.664,68</td>
+    <td> 22,5 </td>
+    <td> 662,77 </td>
+  </tr>
+  
+  <tr>
+    <td> Acima de 4.664,68</td>
+    <td> 27,5 </td>
+    <td>896,00 </td>
+
+  </table>
+</article>
+
+  </section>
+      
+      <div id="circulo">
+        <img src="foto.jpg" alt="foto de perfil">
+      </div>
+      <footer>
+        <p> Perfil no GitHub: 
+         <a href="https://github.com/DonRibeiro" target="_blank"><img src="gh.png" href="https://github.com/DonRibeiro" target="_blank"></a> </a></p>
+        <p> Perfil no Linkedin:
+           <a href="https://www.linkedin.com/in/donavan-assis-5368a31b9/" target="_blank"> <img src="lk.png" alt="Foto linkedin" >  </a>
+        
+        </p>
+      </footer>
+    <script src="script.js">
+      
+    </script>
+      
+      
+    </body>
+    </html>
