@@ -75,10 +75,17 @@ body{
     font-family: var(--fonthead);
   }
   
-  input{
+  input #invest, #cdi, #taxa, #perio{
     padding: 6px;
     margin: auto;
     
+    max-width: 100px;  
+  }
+
+  #invest, #cdi, #taxa, #perio::placeholder{
+color: #999;
+font-style: italic;
+
   }
 .input-g{
   padding: 10px;
@@ -88,7 +95,7 @@ body{
 
 #res{
   padding: 3em;
-  background-color: var(--colorres);
+  background-color: var(--colorartc);
   margin: auto;
   margin-bottom: 8px;
   text-align: center;
@@ -99,12 +106,12 @@ body{
 }
 
 #res p{
-  background-color: #ffffff67;
+  background-color: #a5a1a15b;
   padding: 8px;
   border-radius: 5px;
   width: auto;
   height: auto;
-  
+  font-weight:bold;
 }
 
 #resul{
@@ -114,7 +121,9 @@ body{
   background-color: var(--colorhead);
   color: white;
   transform: scale(1.1);
+  cursor: pointer;
 }
+
 
 #period{
   padding: 5px;
@@ -161,6 +170,7 @@ table tr:nth-child(odd){
     height: 150px;
     border-radius: 50%;
     margin: auto;
+    margin-top: -10px;
     overflow: hidden;
     border: 3px solid black;
   
@@ -177,38 +187,28 @@ table tr:nth-child(odd){
   }
   
   
-  footer{
+  #footer{
     text-align: center;
     padding: 1px;
     color: black;
     background-color: white;
-    max-width: 300px;
+    max-width: 200px;
     margin: auto;
+    margin-top: 10px;
     border-radius: 5px;
     font-weight: bold;
     box-shadow: 3px 3px 0px black;
   }
   
-footer img{
-  transform: (2.2);
+#footer img{
+  transition: transform 0.3s ease;
+ filter: hue-rotate(0deg);
+ filter: brightness(0%);
+ margin: 10px;
+ 
 }
 
-  footer a{
-    color:#f62a2ac8;
-  }
-  
-  footer a:active{
-    color: black;
-  }
-  
-  footer a:hover{
-    color: black;
-  }
-  
-  footer a:visited{
-    color: white;
-  }
-  
-  a{
-background-color:#ffffff15 ;
-  }
+#footer img:hover{
+  transform: scale(1.2);
+  filter: brightness(120%);
+}
