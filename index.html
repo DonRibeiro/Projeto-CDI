@@ -6,7 +6,7 @@
     
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="iconS.ico" type="image/x-icon">
-    <title>Seus rendimentos</title>
+    <title>Calculadora CDI</title>
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
       
@@ -24,19 +24,19 @@
         
   <div id="contagem">
     <div class="input-g">
-    <p> Valor que será investido: <input type="number" name="invest" id="invest"></p>
+    <p> Valor que será investido: <input type="number" name="invest" id="invest" placeholder="Ex: 1000"></p>
     </div>
        
     <div class="input-g">
-          <p> Período em anos: <input type="number" name="perio" id="perio"></p> 
+          <p> Período em anos: <input type="number" name="perio" id="perio" placeholder="Ex: 2"></p> 
         </div>
         
         <div class="input-g">
-          <p> Taxa de CDI (% ao ano): <input type="number" name="taxa" id="taxa"></p>
+          <p> Taxa de CDI (% ao ano): <input type="number" name="taxa" id="taxa" placeholder="Ex: 13,15"></p>
         </div>
 
         <div class="input-g">
-          <p> Rendimento do CDI(%): <input type="number" name="cdi" id="cdi"></p>
+          <p> Percentual CDI(%): <input type="number" name="cdi" id="cdi" placeholder="Ex: 100"></p>
         </div>
   
         <div class="input-g">
@@ -130,14 +130,16 @@
       <div id="circulo">
         <img src="foto.jpg" alt="foto de perfil">
       </div>
-      <footer>
-        <p> Perfil no GitHub: 
-         <a href="https://github.com/DonRibeiro" target="_blank"><img src="gh.png" href="https://github.com/DonRibeiro" target="_blank"></a> </a></p>
-        <p> Perfil no Linkedin:
-           <a href="https://www.linkedin.com/in/donavan-assis-5368a31b9/" target="_blank"> <img src="lk.png" alt="Foto linkedin" >  </a>
+      <div id="footer">
+        <p>  
+         <a href="https://github.com/DonRibeiro" target="_blank">
+          <img src="gh.png" href="https://github.com/DonRibeiro" target="_blank"></a>
+
+       
+           <a href="https://www.linkedin.com/in/donavan-assis-5368a31b9/" target="_blank"> <img src="lk.png" id="linkedin"alt="Foto linkedin" >  </a>
         
         </p>
-      </footer>
+      </div>
     <script src="script.js">
       
     </script>
