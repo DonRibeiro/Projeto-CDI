@@ -1,5 +1,5 @@
-let a = document.getElementById("resul")
-a.addEventListener("click", calcular) // Adiciona ação de calcular
+let buttonC = document.getElementById("resul")
+buttonC.addEventListener("click", calcular) // Adiciona ação de calcular
 
 function calcular() {
   
@@ -9,15 +9,14 @@ function calcular() {
     let cdi = document.getElementById('cdi')
     let res = document.getElementById('res')
   
-    let investVal = Number(invest.value) //Inverter a string para number
-    let perioVal = Number(perio.value)
-    let taxaVal = Number(taxa.value)
-    let cdiVal = Number(cdi.value)
+    const investVal = Number(invest.value) //Inverter a string para number
+    const perioVal = Number(perio.value)
+    const taxaVal = Number(taxa.value)
+    const cdiVal = Number(cdi.value)
     if(invest.value.length == 0|| invest.value.length == 0 || taxa.value.length == 0|| cdi.value.length == 0) {
         window.alert("Erro ao executar, por favor informe todos os valores.") }
-        else {
-      //let taxaVal = taxaVal/100
-      //let taxaVal = (1 + taxaVal)**(1/252) -1
+    else {
+      
       let rend = investVal * (cdiVal/100) * (taxaVal/100) //Cálculo para o rendimento
         
         let valorf = investVal * (1 + taxaVal/100)**perioVal //Juros compostos para descobrir o montante
