@@ -78,15 +78,18 @@ body{
   input #invest, #cdi, #taxa, #perio{
     padding: 6px;
     margin: auto;
-    
+    color: black;
+    font-style: normal;
     max-width: 100px;  
   }
 
-  #invest, #cdi, #taxa, #perio::placeholder{
-color: #999;
-font-style: italic;
 
-  }
+ input::placeholder{
+color: gray;
+font-style: italic;}
+
+
+  
 .input-g{
   padding: 10px;
   font-family: var(--fontinput);
